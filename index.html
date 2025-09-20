@@ -1,34 +1,84 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Pagina</title>
-        <meta name="description" content="Buena">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/estilos.css">
-    </head>
-    <header>
-        <h1>Pagina</h1>
-        <img src="" alt="">
-        <li class="nav-item"><a id="home" href="/index.html" class="nav-item">Inicio</a></li>
-        <li class="nav-item"><a id="products" href="/productos.html" class="nav-item">Productos</a></li>
-        <select name="cate" id="cate" class="nav-item">
-            <option selected>Categorias</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        <li class="nav-item"><a id="contact" href="/contacto.html" class="nav-item">Contáctanos</a></li>
-        <li class="nav-item"><a id="inic" href="/iniciosesión.html" class="nav-item">Iniciar Sesión</a></li>
-    </header>
-    <body>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pagina</title>
+    <meta name="description" content="Buena">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo y nombre del sitio -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!--  <img src="https://via.placeholder.com/40" alt="Logo" class="d-inline-block align-text-top me-2"> -->
+                Página
+            </a>
+
+            <!-- Botón para menú en móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos del menú -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="home" href="/index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="products" href="/productos.html" class="nav-link">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <option value="1" class="dropdown-item">Categoría 1</option>
+                            </li>
+                            <li>
+                                <option value="2" class="dropdown-item">Categoría 2</option>
+                            </li>
+                            <li>
+                                <option value="3" class="dropdown-item">Categoría 3</option>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact" href="/contacto.html" class="nav-link">Contáctanos</a>
+                    </li>
+                </ul>
+
+                <!-- Elementos de la derecha -->
+                <div class="d-flex">
+                    <a id="inic" href="/iniciosesión.html" class="btn btn-outline-primary">
+                        <i class="bi bi-person me-1"></i> Iniciar Sesión
+                    </a>
+                </div>
+            </div>
         </div>
-    </body>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h2>Contenido Principal</h2>
+                <p>Este es el contenido de tu página. Aquí puedes agregar secciones, productos, información, etc.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
