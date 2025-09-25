@@ -1,27 +1,23 @@
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.8rem;
-        }
-        .navbar-nav .nav-link {
-            color: rgba(0, 0, 0, 0.7);
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            transition: color 0.3s;
-        }
-        .navbar-nav .nav-link:hover {
-            color: rgba(0, 0, 0, 0.9);
-        }
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            margin-top: 0;
-        }
-        #cate {
-            border: none;
-            background: transparent;
-            padding: 0.5rem 1rem;
-            color: rgba(0, 0, 0, 0.7);
-            cursor: pointer;
-        }
-        .navbar {
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+.custom-logo {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+html, body {
+  height: 100%;       /* que ocupen todo el alto */
+  margin: 0;          /* eliminamos márgenes por defecto */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* body como contenedor flex */
+}
+
+main {
+  flex: 1; /* el contenido empuja el footer hacia abajo */
+}
+
+footer {
+  margin-top: auto; /* el footer se queda pegado abajo */
+}
